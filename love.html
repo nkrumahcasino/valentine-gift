@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><H2>HAPPY VALENTINE DAY EUNICE ESSIEN</H2></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="eunice5">
+
+<!-- LOGIN SCREEN -->
+<div class="login-container" id="loginPage">
+    <h1>💑🌹🌟<H2>HAPPY VALENTINE DAY EUNICE ESSIEN</H2></h1>
+    <p>Enter your heart’s password to unlock my love ❤️</p>
+    <p style="font-size:small; color:#ff4d6d;">Hint: type this “iloveyou”in the big box and click the small box🎁</p>
+    <input type="password" id="password" placeholder="I LOVE YOU EUNICE">
+    <button onclick="decryptAccess()">MY HEART❤️</button>
+    <p id="error"></p>
+</div>
+
+<!-- MAIN LOVE PAGE -->
+<div id="lovePage">
+
+    <!-- VIDEO BACKGROUND -->
+    <video autoplay loop muted id="bgVideo">
+        <source src="videos/date.mp4" type="video/mp4">
+    </video>
+
+    <h1 class="glow">❤️<H3>WELCOME! YAABA OH SORRY BHAB🤣</H3> ❤️</h1>
+    <p id="typedMessage"></p>
+
+    <!-- MUSIC BUTTON -->
+    <button onclick="toggleMusic()">🎵 Play / Pause Music</button>
+    <audio id="bgMusic" preload="auto">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- VIDEO SOUND TOGGLE -->
+    <button onclick="toggleVideoSound()">🔊 Toggle Video Sound</button>
+
+    <!-- COUNTDOWN -->
+    <div id="countdown"></div>
+
+    <!-- PHOTO / VIDEO SLIDER -->
+    <div class="slider">
+        <div id="slideContainer">
+            <img id="slideImg" src="images/eunice1.jpeg">
+            <video id="slideVideo" style="display:none;" muted>
+                <source src="videos/date1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <button onclick="prevSlide()">◀</button>
+        <button onclick="nextSlide()">▶</button>
+<script src="script.js"></script>
